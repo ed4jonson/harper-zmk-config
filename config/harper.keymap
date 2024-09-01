@@ -51,12 +51,12 @@
 
         number_layer {
             bindings = <
-&none      &none         &none         &none         &none       &none                     &none         &none       &none      &none        &none             &none
-&none      &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION              &kp GRAVE     &kp DOLLAR  &kp UP     &kp END      &none             &none
-&none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION           &kp HASH      &kp AT      &kp DOWN   &kp RIGHT    &kp DEL           &kp BSPC
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_MUTE  &none                     &none         &none       &none      &kp PERCENT  &kp LEFT_BRACKET  &kp RBKT
-&kp SLASH  &none         &trans        &kp LGUI      &kp LALT    &mo ADJ          &mo RSE  &mo LWR       &kp SPACE   &kp SPACE  &mo RSE      &kp PERIOD        &kp EQUAL  &kp PLUS
-                                                                                           &kp ASTERISK                                                                   &kp MINUS
+&none      &none         &none         &none         &none       &none                       &none         &none       &none            &none                 &kp PRINTSCREEN   &kp DELETE
+&none      &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION                &kp GRAVE     &kp DOLLAR  &none            &none                 &kp PRINTSCREEN   &kp DELETE
+&none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION             &kp HASH      &kp AT      &none            &kp NON_US_BACKSLASH  &none             &none
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_MUTE  &kp K_VOLUME_DOWN           &none         &none       &kp C_VOLUME_UP  &kp PERCENT           &kp LEFT_BRACKET  &kp RBKT
+&kp SLASH  &trans        &trans        &kp LGUI      &kp LALT    &mo ADJ            &mo RSE  &mo LWR       &kp SPACE   &kp SPACE        &mo RSE               &kp PERIOD        &kp EQUAL   &kp PLUS
+                                                                                             &kp ASTERISK                                                                                   &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
