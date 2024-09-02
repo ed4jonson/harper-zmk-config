@@ -21,12 +21,12 @@
 
         default_layer {
             bindings = <
-&none                 &none  &none      &none     &none     &none               &none         &none       &none       &none          &none  &none
-&mt LEFT_META ESCAPE  &kp Q  &kp W      &kp E     &kp R     &kp T               &kp Y         &kp U       &kp I       &kp O          &kp P  &kp BACKSPACE
-&lt 1 TAB             &kp A  &kp S      &kp D     &kp F     &kp G               &kp SQT       &kp H       &kp J       &kp K          &kp L  &kp ENTER
-&kp LSHFT             &kp Z  &kp X      &kp C     &kp V     &kp COMMA           &kp C_MUTE    &kp DELETE  &kp PERIOD  &kp SEMICOLON  &kp B  &kp N
-&kp M                 &mo 1  &kp LCTRL  &kp LGUI  &kp LALT  &mo 4      &mo RSE  &kp LEFT_ALT  &kp SPACE   &kp SPACE   &kp RIGHT_ALT  &mo 2  &mo 4          &mo 3
-                                                                                &mo 3                                                                      &kp RCTRL
+&none                 &none  &none      &none     &none     &none               &none         &none       &none      &none          &none  &none
+&mt LEFT_META ESCAPE  &kp Q  &kp W      &kp E     &kp R     &kp T               &kp Y         &kp U       &kp I      &kp O          &kp P  &kp BACKSPACE
+&lt 1 TAB             &kp A  &kp S      &kp D     &kp F     &kp G               &kp SQT       &kp H       &kp J      &kp K          &kp L  &kp ENTER
+&kp LSHFT             &kp Z  &kp X      &kp C     &kp V     &kp COMMA           &kp C_MUTE    &kp DELETE  &none      &kp SEMICOLON  &kp B  &kp N
+&kp M                 &mo 1  &kp LCTRL  &kp LGUI  &kp LALT  &mo 4      &mo RSE  &kp LEFT_ALT  &kp SPACE   &kp SPACE  &kp PERIOD     &mo 2  &mo 4          &mo 3
+                                                                                &mo 3                                                                     &kp RCTRL
             >;
 
             sensor-bindings =
@@ -51,12 +51,12 @@
 
         number_layer {
             bindings = <
-&none      &none         &none         &none         &none       &none                       &none         &none       &none            &none                 &none             &none
-&none      &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION                &kp GRAVE     &kp DOLLAR  &none            &none                 &kp PRINTSCREEN   &kp DELETE
-&none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION             &kp HASH      &kp AT      &none            &kp NON_US_BACKSLASH  &none             &none
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_MUTE  &kp K_VOLUME_DOWN           &none         &none       &kp C_VOLUME_UP  &kp PERCENT           &kp LEFT_BRACKET  &kp RBKT
-&kp SLASH  &trans        &trans        &kp LGUI      &kp LALT    &mo ADJ            &mo RSE  &mo LWR       &kp SPACE   &kp SPACE        &mo RSE               &kp PERIOD        &kp EQUAL   &kp PLUS
-                                                                                             &kp ASTERISK                                                                                   &kp MINUS
+&none      &none         &none         &none         &none       &none                       &none         &none       &none      &none                 &none             &none
+&none      &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION                &kp GRAVE     &kp DOLLAR  &none      &none                 &kp PRINTSCREEN   &kp DELETE
+&none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION             &kp HASH      &kp AT      &none      &kp NON_US_BACKSLASH  &none             &none
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_MUTE  &kp K_VOLUME_DOWN           &none         &none       &none      &kp PERCENT           &kp LEFT_BRACKET  &kp RBKT
+&kp SLASH  &trans        &trans        &kp LGUI      &kp LALT    &mo ADJ            &mo RSE  &mo LWR       &kp SPACE   &kp SPACE  &kp C_VOLUME_UP       &kp PERIOD        &kp EQUAL   &kp PLUS
+                                                                                             &kp ASTERISK                                                                             &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -80,8 +80,8 @@
 &trans      &trans  &trans  &trans  &trans   &trans                   &trans     &trans         &trans        &trans                &trans                 &trans
 &trans      &kp F7  &kp F8  &kp F9  &kp F10  &kp HASH                 &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
 &trans      &kp F4  &kp F5  &kp F6  &kp F11  &kp EXCLAMATION          &kp END    &kp HOME       &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&trans      &kp F1  &kp F2  &kp F3  &kp F12  &kp UNDERSCORE           &trans     &trans         &kp AT        &trans                &trans                 &kp PERCENT
-&kp DOLLAR  &trans  &trans  &trans  &trans   &trans           &trans  &trans     &trans         &trans        &trans                &trans                 &trans       &trans
+&trans      &kp F1  &kp F2  &kp F3  &kp F12  &kp UNDERSCORE           &trans     &trans         &none         &trans                &trans                 &kp PERCENT
+&kp DOLLAR  &trans  &trans  &trans  &trans   &trans           &trans  &trans     &trans         &trans        &kp AT                &trans                 &trans       &trans
                                                                       &trans                                                                                            &trans
             >;
         };
