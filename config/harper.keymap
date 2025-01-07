@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEF 0
@@ -38,12 +36,12 @@
 
         navigation_layer {
             bindings = <
-&none   &none        &none         &none          &none          &none           &none   &none      &none           &trans          &none            &none
-&trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none          &none           &trans  &trans     &trans          &mmv MOVE_DOWN  &trans           &trans
-&trans  &kp LEFT     &kp DOWN      &kp RIGHT      &none          &none           &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &kp HOME     &kp DELETE    &kp END        &kp BACKSPACE  &none           &trans  &none      &trans          &trans          &trans           &trans
-&trans  &trans       &trans        &trans         &trans         &trans  &trans  &trans  &kp ENTER  &mkp MCLK       &trans          &mkp LCLK        &mkp RCLK  &trans
-                                                                                 &trans                                                                         &trans
+&none   &none        &none         &none          &none          &none           &none   &none      &none   &trans  &none   &none
+&trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none          &none           &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &kp LEFT     &kp DOWN      &kp RIGHT      &none          &none           &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &kp HOME     &kp DELETE    &kp END        &kp BACKSPACE  &none           &trans  &none      &trans  &trans  &trans  &trans
+&trans  &trans       &trans        &trans         &trans         &trans  &trans  &trans  &kp ENTER  &trans  &trans  &trans  &trans  &trans
+                                                                                 &trans                                             &trans
             >;
 
             sensor-bindings =
@@ -54,8 +52,8 @@
         number_layer {
             bindings = <
 &none      &none         &none         &none         &none       &none                       &none         &none       &none         &none                 &none             &none
-&none      &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION                &kp GRAVE     &kp DOLLAR  &none         &none                 &kp PRINTSCREEN   &kp DELETE
-&none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION             &kp HASH      &kp AT      &none         &kp NON_US_BACKSLASH  &none             &none
+&trans     &kp N7        &kp N8        &kp N9        &kp N0      &kp QUESTION                &kp GRAVE     &kp DOLLAR  &none         &none                 &kp PRINTSCREEN   &kp DELETE
+&trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp EXCLAMATION             &kp HASH      &kp AT      &none         &kp NON_US_BACKSLASH  &none             &none
 &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_MUTE  &kp K_VOLUME_DOWN           &none         &none       &kp C_VOL_UP  &kp PERCENT           &kp LEFT_BRACKET  &kp RBKT
 &kp SLASH  &trans        &trans        &kp LGUI      &kp LALT    &mo ADJ            &mo RSE  &mo LWR       &kp SPACE   &kp SPACE     &kp C_VOLUME_UP       &kp PERIOD        &kp EQUAL   &kp PLUS
                                                                                              &kp ASTERISK                                                                                &kp MINUS
@@ -85,6 +83,17 @@
 &trans      &kp F1  &kp F2  &kp F3  &kp F12  &kp UNDERSCORE           &trans     &trans         &none         &trans                &trans                 &kp PERCENT
 &kp DOLLAR  &trans  &trans  &trans  &trans   &trans           &trans  &trans     &trans         &trans        &kp AT                &trans                 &trans       &trans
                                                                       &trans                                                                                            &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &trans                                          &trans
             >;
         };
     };
