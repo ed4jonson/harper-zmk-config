@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEF 0
@@ -23,12 +22,12 @@
 
         default_layer {
             bindings = <
-&none                 &none  &none      &none     &none     &none               &none          &none       &none         &none       &none  &none
-&mt LEFT_META ESCAPE  &kp Q  &kp W      &kp E     &kp R     &kp T               &kp Y          &kp U       &kp I         &kp O       &kp P  &kp BACKSPACE
-&lt 1 TAB             &kp A  &kp S      &kp D     &kp F     &kp G               &kp SQT        &kp H       &kp J         &kp K       &kp L  &kp ENTER
-&kp LSHFT             &kp Z  &kp X      &kp C     &kp V     &kp COMMA           &kp C_MUTE     &kp DELETE  &kp PERIOD    &kp B       &none  &kp N
-&kp M                 &mo 1  &kp LCTRL  &kp LGUI  &kp LALT  &mo 4      &mo RSE  &kp LEFT_ALT   &kp SPACE   &mmv MOVE_UP  &kp PERIOD  &mo 2  &mo 4          &mo 3
-                                                                                &kp LEFT_META                                                              &kp RCTRL
+&none                 &none  &none      &none     &none     &none               &none          &none       &none       &none  &none  &none
+&mt LEFT_META ESCAPE  &kp Q  &kp W      &kp E     &kp R     &kp T               &kp Y          &kp U       &kp I       &kp O  &kp P  &kp BACKSPACE
+&lt 1 TAB             &kp A  &kp S      &kp D     &kp F     &kp G               &kp SQT        &kp H       &kp J       &kp K  &kp L  &kp ENTER
+&kp LSHFT             &kp Z  &kp X      &kp C     &kp V     &kp COMMA           &kp C_MUTE     &kp DELETE  &kp PERIOD  &kp B  &none  &kp N
+&kp M                 &mo 1  &kp LCTRL  &kp LGUI  &kp LALT  &mo 4      &mo RSE  &kp LEFT_ALT   &kp SPACE   &none       &none  &none  &none          &none
+                                                                                &kp LEFT_META                                                       &kp RCTRL
             >;
 
             sensor-bindings =
@@ -89,6 +88,17 @@
         };
 
         layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &trans                                          &trans
+            >;
+        };
+
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
